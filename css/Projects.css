@@ -1,0 +1,61 @@
+#projects {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#projects .section-title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+}
+
+#projects .section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2370ce;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.myProjectsSwiper {
+  padding: 20px;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #ffffff 0%, #e6f0fb 100%);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #d0e2fa;
+  flex: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #d6e8fa 100%);
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2370ce;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}

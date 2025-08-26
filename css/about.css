@@ -1,0 +1,141 @@
+/* About Section */
+#about {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+}
+
+.about-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+/* Left Column */
+.about-left {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-pic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px; /* change to 50% for circle */
+  box-shadow: 0px 12px 28px rgba(35, 112, 206, 0.25);
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px; /* change to 50% for circle */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* Award Card */
+.award-card {
+  margin-top: 30px;
+  background: linear-gradient(135deg, #2370ce 0%, #3b8ef3 100%);
+  color: #000000;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(35, 112, 206, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+}
+
+.award-card i {
+  font-size: 28px;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.award-card h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Right Column */
+.about-right {
+  flex: 2;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2370ce;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Timeline Cards */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.timeline-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  border-left: 6px solid #2370ce;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0,0,0,0.12);
+}
+
+.timeline-card .year {
+  display: block;
+  font-weight: bold;
+  color: #2370ce;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.timeline-card h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.timeline-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-right {
+    text-align: left;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+}
