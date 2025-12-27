@@ -2,6 +2,9 @@ Client Portfolio Website
 
 This is a responsive client portfolio website created to showcase projects, skills, and contact information in a clean and professional way. The website is designed to provide a strong online presence for clients and individuals.
 
+---
+Preview: https://rahulpawar56022.github.io/NikhilJadhav.github.io/s
+
 Features
 
 Responsive design for desktop and mobile devices
